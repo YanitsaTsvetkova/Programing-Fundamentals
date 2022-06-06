@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _02._CSharp_Fundamentals_Data_Types_and_Variables_Lab
+namespace _02._Convert Meters To Kilometers
 {
     internal class Program
     {
@@ -11,7 +11,6 @@ namespace _02._CSharp_Fundamentals_Data_Types_and_Variables_Lab
             decimal kilometers = (decimal)(meters / 1000.0f);
 
             Console.WriteLine($"{kilometers:f2}");
-
         }
     }
 }

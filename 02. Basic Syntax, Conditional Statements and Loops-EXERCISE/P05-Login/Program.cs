@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _5_
+namespace _5_Login
 {
     class Program
     {

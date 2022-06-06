@@ -85,7 +85,6 @@ namespace _3_Vacation
                 totalPrice *= 0.95;
             }
             
-
             Console.WriteLine($"Total price: {(decimal)totalPrice:f2}");
         }
     }

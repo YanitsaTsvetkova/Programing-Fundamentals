@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Vending
+namespace 07.Vending Machine
 {
     class Program
     {

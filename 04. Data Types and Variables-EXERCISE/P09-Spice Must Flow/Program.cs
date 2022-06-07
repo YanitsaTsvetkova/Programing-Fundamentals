@@ -1,6 +1,6 @@
 using System;
 
-namespace P09._Spice_Must_Flow
+namespace 09._Spice_Must_Flow
 {
     internal class Program
     {

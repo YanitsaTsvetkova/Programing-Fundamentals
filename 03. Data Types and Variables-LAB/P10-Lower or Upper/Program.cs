@@ -1,12 +1,22 @@
-﻿using System;
+sing System;
 
-namespace _10._Lower_or_Upper
+namespace P10.LowerToUpper
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            char character = char.Parse(Console.ReadLine());
+
+            if (char.IsUpper(character))
+            {
+                Console.WriteLine("upper-case");
+            }
+
+            if (char.IsLower(character))
+            {
+                Console.WriteLine("lower-case");
+            }
         }
     }
 }

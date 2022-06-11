@@ -1,21 +1,22 @@
-﻿using System;
-
-namespace P03._Rounding_Numbers
+sing System;
+using System.Linq;
+namespace Rounding_Numbers
 {
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
-            string [] rawInput = Console.ReadLine().Split();
-            double [] items = new double[rawInput.Length];
+            double[] numbers = Console.ReadLine()
+                .Split()
+                .Select(double.Parse)
+                .ToArray();
 
-            for (int i = 0; i < rawInput.Length; i++)
+            for (int i = 0; i < numbers.Length; i++)
             {
-                items[i] = double.Parse(rawInput[i]);
-            }
-            for (int i = 0; i < items.Length; i++)
-            {
-                Console.WriteLine($"{items[i]} => {Math.Round(items[i],MidpointRounding.AwayFromZero)}");
+                double number = numbers[i];
+                double roudedNumber = Math.Round(number, MidpointRounding.AwayFromZero);
+
+                Console.WriteLine($"{Convert.ToDecimal(number)} => {Convert.ToDecimal(roudedNumber)}");
             }
         }
     }

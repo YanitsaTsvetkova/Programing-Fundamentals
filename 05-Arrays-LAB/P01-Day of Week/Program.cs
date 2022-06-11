@@ -1,23 +1,34 @@
-﻿using System;
-using System.Linq;
-namespace Rounding_Numbers
+using System;
+
+namespace P03_Arrays_Lab
 {
-    class Program
+    internal class Program
     {
         static void Main(string[] args)
         {
-            double[] numbers = Console.ReadLine()
-                .Split()
-                .Select(double.Parse)
-                .ToArray();
 
-            for (int i = 0; i < numbers.Length; i++)
+            int dayNumber = int.Parse(Console.ReadLine());
+
+            string[] daysOfTehWeek = new string[]
             {
-                double number = numbers[i];
-                double roudedNumber = Math.Round(number, MidpointRounding.AwayFromZero);
+                "Monday", // 0
+                "Tuesday", // 1
+                "Wednesday", //2
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday"
+            };
 
-                Console.WriteLine($"{Convert.ToDecimal(number)} => {Convert.ToDecimal(roudedNumber)}");
+            if (dayNumber >= 1 && dayNumber <= daysOfTehWeek.Length)
+            {
+                Console.WriteLine(daysOfTehWeek[dayNumber - 1]);
             }
+            else
+            {
+                Console.WriteLine("Invalid day!");
+            }
+
         }
     }
 }

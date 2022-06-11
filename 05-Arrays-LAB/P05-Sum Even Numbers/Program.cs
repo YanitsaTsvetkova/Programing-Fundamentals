@@ -8,7 +8,7 @@ namespace P05._Sum_Even_Numbers
         static void Main(string[] args)
         {
             int[] items = Console.ReadLine().Split().Select(int.Parse).ToArray();
-            // procutame masiv ot konzolata
+            
             int sum = 0;
 
             foreach (int item in items) 

@@ -15,7 +15,7 @@ namespace P08._Condense_Array_to_Number
 
             for (int i = 0; i < array.Length - 1; i++)
             {
-                int[] condensed = new int[array.Length - 1]; // -1 zashtoto namalqvam pri wsqka operaciq
+                int[] condensed = new int[array.Length - 1]; 
 
                 for (int j = 0; j < condensed.Length; j++)
                 {

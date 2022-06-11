@@ -19,7 +19,7 @@ namespace P02._Print_Numbers_in_Reverse_Order
             {
                 Console.Write($"{items[i]} ");
             }
-           // Console.WriteLine(String.Join(" ", items)); alternativa na gorniq for cikul!
+           // Console.WriteLine(String.Join(" ", items)); //optional
 
             Console.WriteLine();
         }

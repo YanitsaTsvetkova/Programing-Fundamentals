@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace P10_Kamino_Factory
+namespace 9._Kamino_Factory
 {
     internal class Program
     {
@@ -31,20 +31,20 @@ namespace P10_Kamino_Factory
 
             int dnaSum = 0;
 
-            int dnaCount = -1; // zashtoto nqma takuv
+            int dnaCount = -1; 
 
-            int dnaStartIndex = -1; // winagi shte sme v masiva, 
+            int dnaStartIndex = -1; 
 
-            int dnaSamples = -1; // nai daobra proba
+            int dnaSamples = -1; 
 
             int sample = 0;
 
             while (input != "Clone them!")
             {
                 // currend DNA info
-                sample++; // uvelichawame broq na probite
+                sample++; 
 
-                int[] currentDna = input.Split("!", StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray(); // razdelqme
+                int[] currentDna = input.Split("!", StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray();
                  
                 int currentCount = 0;
 
@@ -56,7 +56,7 @@ namespace P10_Kamino_Factory
 
                 bool isCurrDnaBetter = false;
 
-                int count = 0; // produljitelnostta
+                int count = 0; 
 
                 for (int i = 0; i < currentDna.Length; i++)
                 {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _10._LadyBiugs
+namespace _10._LadyBugs
 {
     internal class Program
     {

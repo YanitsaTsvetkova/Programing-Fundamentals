@@ -41,7 +41,6 @@ namespace 9._Kamino_Factory
 
             while (input != "Clone them!")
             {
-                // currend DNA info
                 sample++; 
 
                 int[] currentDna = input.Split("!", StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray();
@@ -74,9 +73,9 @@ namespace 9._Kamino_Factory
                     }
 
                 }
-                // 0 1 1 10 1 => 1 1 (endIndex = 2) => (startIndex 2 - 2 = 0 + 1 = 1)
+                
                 currentStartIndex = currentEndIndex - currentCount + 1;
-                // 0 1 1 0 1 .Sum () = 3
+              
                 currentDnaSum = currentDna.Sum();
 
                 // chek current DNA with Best DNA

@@ -9,7 +9,7 @@ namespace _10._LadyBiugs
             int fieldSize = int.Parse(Console.ReadLine());
             int[] ladyBugField = new int[fieldSize];
 
-            string[] occupiedIndexes = Console.ReadLine().Split(); // okupirani linii
+            string[] occupiedIndexes = Console.ReadLine().Split(); 
 
             for (int i = 0; i < occupiedIndexes.Length; i++)
             {
@@ -17,7 +17,7 @@ namespace _10._LadyBiugs
 
                 if (currentIndex >= 0 && currentIndex < fieldSize)
                 {
-                    ladyBugField[currentIndex] = 1; // zapulvame poleto, kudeto ima bubolechka
+                    ladyBugField[currentIndex] = 1; 
                 }
             }
 
@@ -25,11 +25,11 @@ namespace _10._LadyBiugs
 
             while (commands[0] != "end")
             {
-                int currentIndex = int.Parse(commands[0]); // znam, che sme vzeli 0 , ot edinicata e stringa
+                int currentIndex = int.Parse(commands[0]); 
 
                 bool isFirst = true; // dali bubolechkata e purva
 
-                while (currentIndex >= 0 && currentIndex < fieldSize && ladyBugField[currentIndex] != 0) //moga da mestq
+                while (currentIndex >= 0 && currentIndex < fieldSize && ladyBugField[currentIndex] != 0) 
                 {
                     if (isFirst)
                     {
